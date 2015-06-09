@@ -1,0 +1,212 @@
+#LyX file created by tex2lyx 2.1
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass article
+\begin_preamble
+
+
+\usepackage[BoldFont,
+			SlantFont,
+			CJKchecksingle]{xeCJK}%中文包
+\usepackage{titlesec}% 控制标题
+\usepackage{titletoc}% 控制目录
+
+% 页面布局设置
+			 
+% 超链接包，增加书签，业内超链接等
+\usepackage{layout}% 页面布局
+
+% \usepackage{enumerate}            % 列表环境
+% \usepackage{graphicx,subfigure}             % 图和子图包
+% \usepackage{cite}                    % 支持引用
+
+%%------------------------------------- 以下几个为数学包，文章包含公式时加入
+
+% \usepackage{amsmath,amsthm,amssymb,latexsym,color} 
+% \newcommand{\mv}[1]{\mbox{\boldmath$#1$}}         % 自定义矩阵向量 斜+黑
+% \newcommand{\id}{\mathrm{d}}                      % 积分测度改为正体
+
+
+\setCJKmainfont[BoldFont=黑体]{宋体}                 % 中文衬线字体：宋体；其加粗字体为：黑体
+\setCJKsansfont{STKaiti}                           % 中文非衬线字体：楷体
+\setCJKmonofont{宋体}                               % 中文等宽字体：宋体
+
+%----------------------------------------------- 以下为英文字体，一般不要设置
+% \setmainfont[BoldFont=Arial]{Times New Roman}      % 英文衬线字体：TNR；其加粗字体为：Arial
+% \setsansfont{Arial}                                % 英文非衬线字体：Arial
+
+\parindent 2em             %段首缩进 
+\parskip=.5\baselineskip   %段间距
+\linespread{1.2}           %行间距
+
+%----------------------------------- 以下定义常用字体，可用\song，\kai，\hei 切换
+
+\setCJKfamilyfont{songti}{宋体}
+\newcommand{\song}{\CJKfamily{songti}}
+\setCJKfamilyfont{kaiti}{STKaiti}
+\newcommand{\kai}{\CJKfamily{kaiti}}
+\setCJKfamilyfont{heiti}{黑体}
+\newcommand{\hei}{\CJKfamily{heiti}}
+
+%%%%中文环境下章节等名称重定义%%%%
+\renewcommand{\contentsname}{目\quad{}录}     
+% \renewcommand{\indexname}{索引}
+% \renewcommand{\listfigurename}{插图目录}
+% \renewcommand{\listtablename}{表格目录}
+% \renewcommand{\figurename}{图}
+% \renewcommand{\tablename}{表}
+% \renewcommand{\appendixname}{附录}
+ 
+
+
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package none
+\inputencoding auto
+\fontencoding default
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref true
+\pdf_bookmarks 0
+\pdf_bookmarksnumbered 0
+\pdf_bookmarksopen 0
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks 0
+\pdf_pdfborder 0
+\pdf_colorlinks 1
+\pdf_backref section
+\pdf_pdfusetitle 0
+\pdf_quoted_options "CJKbookmarks=true,bookmarksnumbered=true,bookmarksopen=true,citecolor=blue,linkcolor=blue,"
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 0
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 0
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+This is the title
+\end_layout
+
+\begin_layout Author
+ 李林静
+\begin_inset Newline newline
+\end_inset
+
+ linjing.li@ia.ac.cn
+\begin_inset Newline newline
+\end_inset
+
+ 互联网大数据与安全信息学研究中心
+\begin_inset Newline newline
+\end_inset
+
+ 复杂系统管理与控制国家重点实验室
+\begin_inset Newline newline
+\end_inset
+
+ 中国科学院自动化研究所 
+\end_layout
+
+\begin_layout Date
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+today
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+引言
+\end_layout
+
+\begin_layout Subsection
+背景
+\end_layout
+
+\begin_layout Subsection
+国内外现状
+\end_layout
+
+\begin_layout Section
+数学
+\end_layout
+
+\begin_layout Standard
+一些数学符号：
+\begin_inset Formula $\alpha,\beta,\frac{\gamma}{\Delta}$
+\end_inset
+
+ 
+\begin_inset Formula \begin{eqnarray}
+	a^2 + b^2 &=& c^2 \\
+	w_i^j &=& \Gamma_{ik}^jdu^k
+\end{eqnarray}
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

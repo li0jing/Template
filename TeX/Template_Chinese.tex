@@ -1,0 +1,100 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[BoldFont,
+			SlantFont,
+%			CJKsetspaces,
+			CJKchecksingle]{xeCJK}    %中文包
+\usepackage{titlesec}                % 控制标题
+\usepackage{titletoc}                % 控制目录
+
+\usepackage[top=1.25in,
+			bottom=1.25in,
+			left=1in,
+			right=1in]{geometry}     % 页面布局设置
+			 
+\usepackage[CJKbookmarks=true,
+            bookmarksnumbered=true,
+            bookmarksopen=true,
+            colorlinks =true,        % 注释掉此项则交叉引用为彩色边框
+            pdfborder=001,           % 注释掉此项则交叉引用为彩色边框
+            citecolor =blue,%
+            linkcolor =blue,
+            ]{hyperref}             % 超链接包，增加书签，业内超链接等
+\usepackage{layout}                 % 页面布局
+
+% \usepackage{enumerate}            % 列表环境
+% \usepackage{graphicx,subfigure}             % 图和子图包
+% \usepackage{cite}                    % 支持引用
+
+%%------------------------------------- 以下几个为数学包，文章包含公式时加入
+
+% \usepackage{amsmath,amsthm,amssymb,latexsym,color} 
+% \newcommand{\mv}[1]{\mbox{\boldmath$#1$}}         % 自定义矩阵向量 斜+黑
+% \newcommand{\id}{\mathrm{d}}                      % 积分测度改为正体
+
+
+\setCJKmainfont[BoldFont=黑体]{宋体}                 % 中文衬线字体：宋体；其加粗字体为：黑体
+\setCJKsansfont{STKaiti}                           % 中文非衬线字体：楷体
+\setCJKmonofont{宋体}                               % 中文等宽字体：宋体
+
+%----------------------------------------------- 以下为英文字体，一般不要设置
+% \setmainfont[BoldFont=Arial]{Times New Roman}      % 英文衬线字体：TNR；其加粗字体为：Arial
+% \setsansfont{Arial}                                % 英文非衬线字体：Arial
+
+\parindent 2em             %段首缩进 
+\parskip=.5\baselineskip   %段间距
+\linespread{1.2}           %行间距
+
+%----------------------------------- 以下定义常用字体，可用\song，\kai，\hei 切换
+
+\setCJKfamilyfont{songti}{宋体}
+\newcommand\song{\CJKfamily{songti}}
+\setCJKfamilyfont{kaiti}{STKaiti}
+\newcommand\kai{\CJKfamily{kaiti}}
+\setCJKfamilyfont{heiti}{黑体}
+\newcommand\hei{\CJKfamily{heiti}}
+
+%%%%中文环境下章节等名称重定义%%%%
+\renewcommand{\contentsname}{目\quad{}录}     
+% \renewcommand{\indexname}{索引}
+% \renewcommand{\listfigurename}{插图目录}
+% \renewcommand{\listtablename}{表格目录}
+% \renewcommand{\figurename}{图}
+% \renewcommand{\tablename}{表}
+% \renewcommand{\appendixname}{附录}
+ 
+
+\begin{document}
+
+
+\title{This is the title}
+\author{
+	李林静\\
+	linjing.li@ia.ac.cn\\
+	互联网大数据与安全信息学研究中心\\
+	复杂系统管理与控制国家重点实验室\\
+	中国科学院自动化研究所
+	}
+\date{\today}
+
+\maketitle
+
+\section{引言}
+
+\subsection{背景}
+
+\subsection{国内外现状}
+
+
+\section{数学}
+
+一些数学符号：$\alpha,\beta,\frac{\gamma}{\Delta}$
+\begin{eqnarray}
+	a^2 + b^2 &=& c^2 \\
+	w_i^j &=& \Gamma_{ik}^jdu^k
+\end{eqnarray}
+
+
+
+
+\end{document}
